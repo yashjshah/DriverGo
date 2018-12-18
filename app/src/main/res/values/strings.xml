@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Driver Go</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_auth">AuthActivity</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_user_offer">UserOfferActivity</string>
+    <string name="title_activity_transporteur_profile">TransporteurProfileActivity</string>
+    <string name="title_activity_add_offer">AddOfferActivity</string>
+    <string name="google_maps_api_key">AIzaSyCk24XJn7tdCJ4R4I5m3UZk6yU4dU8xJ0U</string>
+
+    <string name="facebook_app_id">306216493441800</string>
+    <string name="fb_login_protocol_scheme">fb306216493441800</string>
+
+    <string name="role">Choose Your Role</string>
+
+    <string-array name="role_arrays">
+        <item>choose your role</item>
+        <item>Client</item>
+        <item>Transporteur</item>
+    </string-array>
+
+    <string name="title_activity_transporteur_edit_profile">TransporteurEditProfileActivity</string>
+    <string name="title_activity_user_profile_edit">UserProfileEditActivity</string>
+    <string name="title_activity_signup2">Signup2Activity</string>
+    <string name="title_activity_all_offers">Transporters Offers </string>
+    <string name="title_activity_my_profile">My Profile</string>
+    <string name="title_activity_all_transporters">All Transporters</string>
+    <string name="title_activity_my_profile_transporter">My Profile</string>
+    <string name="title_activity_transpoter_profile"></string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_offer_subscription">Subscribe</string>
+    <string name="title_activity_client_profile">Client Profile</string>
+</resources>

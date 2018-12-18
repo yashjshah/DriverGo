@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "55183295101",
+    "firebase_url": "https://drivergo-94873.firebaseio.com",
+    "project_id": "drivergo-94873",
+    "storage_bucket": "drivergo-94873.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55183295101:android:5508193a2e0e41eb",
+        "android_client_info": {
+          "package_name": "com.example.jayon.drivergo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "55183295101-fgc9bbdlo3ndkr1iad0gvvge5dteacha.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jayon.drivergo",
+            "certificate_hash": "dc6fc21c9a1231a35acf053b3a0ef35ca57fdaca"
+          }
+        },
+        {
+          "client_id": "55183295101-pcd0gsf3itcv9ump76p54bj3eishclmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWO0unNqOF5_AaMV77MFDSpB2e_X_ws4o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "55183295101-pcd0gsf3itcv9ump76p54bj3eishclmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

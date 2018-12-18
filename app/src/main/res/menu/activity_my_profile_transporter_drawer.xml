@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/AllOffers"
+            android:icon="@drawable/round_person_black_18dp"
+            android:title="All offers" />
+        <item
+            android:id="@+id/Alltransporters"
+            android:icon="@drawable/round_group_black_36dp"
+            android:title="All transporters" />
+        <item
+            android:id="@+id/Editprofile"
+            android:icon="@drawable/baseline_edit_black_18dp"
+            android:title="Edit profile" />
+        <item
+            android:id="@+id/lock"
+            android:icon="@drawable/lock"
+            android:title="Log out" />
+    </group>
+
+
+
+</menu>

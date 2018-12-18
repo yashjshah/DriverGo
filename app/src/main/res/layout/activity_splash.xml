@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.jayon.drivergo.controllers.SplashActivity">
+   <LinearLayout
+       android:id="@+id/LinearLayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:visibility="invisible">
+       <ImageView
+           android:id="@+id/profileImage"
+           android:layout_width="60dp"
+           android:layout_height="60dp"
+           android:src="@drawable/logo4"
+           />
+
+       <TextView
+           android:id="@+id/textView3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/textView"
+           android:layout_centerHorizontal="true"
+           android:layout_marginLeft="70dp"
+           android:layout_marginRight="70dp"
+           android:layout_marginTop="5dp"
+           android:gravity="center"
+           android:text="Driver Go"
+           android:textColor="#606060"
+           android:textSize="16dp"
+           />
+   </LinearLayout>
+
+</LinearLayout>

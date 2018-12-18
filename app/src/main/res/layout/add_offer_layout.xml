@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:background="@drawable/back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add a new offer"
+            android:gravity="center|left"
+            android:paddingLeft="25dp"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:layout_below="@+id/textView"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView3"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Description"
+            android:textColor="#fff"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext"
+            android:inputType="text"
+            android:id="@+id/Description"
+            android:textColorHint="#fff"
+            android:paddingLeft="20dp"/>
+
+
+        <EditText
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Date"
+            android:textColor="#fff"
+            android:inputType="date"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:id="@+id/date"
+            android:textColorHint="#fff"
+            android:paddingLeft="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Price"
+            android:textColor="#fff"
+            android:inputType="number"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:id="@+id/price"
+            android:textColorHint="#fff"
+            android:paddingLeft="20dp"/>
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp" >
+<AutoCompleteTextView
+
+    android:id="@+id/autoCompleteTextView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:text="Please enter Locarion 1" >
+
+   <requestFocus />
+
+    </AutoCompleteTextView>
+
+
+    <AutoCompleteTextView
+
+        android:id="@+id/autoCompleteTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="Please enter Locarion 2" >
+
+        <requestFocus />
+
+    </AutoCompleteTextView>
+
+
+</LinearLayout>

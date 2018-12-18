@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jayon.drivergo.controllers.SigninActivityFragment"
+    tools:showIn="@layout/activity_signin"
+    android:background="@drawable/background3"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            android:background="@drawable/back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+         >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profileImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logo3"
+                app:civ_border_width="1dp"
+                app:civ_border_color="#fff"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Sign in"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/textView"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/textView3"
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="Username"
+                android:textColor="#fff"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext"
+                android:inputType="textEmailAddress"
+                android:id="@+id/username"
+                android:textSize="13dp"
+                android:textColorHint="#fff"
+                android:paddingLeft="20dp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:hint="Password"
+                android:textColor="#fff"
+                android:inputType="textPassword"
+                android:layout_marginTop="15dp"
+                android:textSize="13dp"
+                android:background="@drawable/edittext"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:id="@+id/password"
+                android:textColorHint="#fff"
+                android:paddingLeft="20dp"/>
+
+
+            <com.rey.material.widget.CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Keep me signed in"
+                android:textColorLink="@color/white"
+                android:textColorHint="@color/white"
+                android:textColor="#fff"
+                android:paddingTop="7dp"
+                android:textSize="13dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:textColorHighlight="#fff"
+                android:visibility="gone"
+                />
+
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:text="Continue"
+                android:id="@+id/signinbutton"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:textColor="#717171"
+                android:textSize="13dp"
+                android:background="@drawable/btn2"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

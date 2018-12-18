@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jayon.drivergo.controllers.OfferSubscriptionActivity"
+    tools:showIn="@layout/activity_offer_subscription">
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profileImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#fff"
+                />
+
+            <LinearLayout
+                android:layout_marginLeft="4dp"
+                android:gravity="center|left"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mohamed adel"
+                    android:gravity="center|left"
+                    android:textColor="#7b7b7b"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/textView"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/name"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mohamed adel"
+                    android:gravity="center|left"
+                    android:textColor="#9c9c9c"
+                    android:textSize="10dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/email"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RFGHJKLGERHKBGKER"
+                    android:gravity="center|left"
+                    android:textColor="#9c9c9c"
+                    android:textSize="8dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/id"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RFGHJKLGERHKBGKER"
+                    android:gravity="center|left"
+                    android:textColor="#9c9c9c"
+                    android:textSize="8dp"
+                    android:layout_below="@+id/textView"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/offer_id"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/description1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="description description description description description description description"
+                android:textColor="#969696"
+                android:textSize="13sp"
+                android:layout_marginTop="5dp"
+
+                />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="date"
+                android:textColor="#aeaeae"
+                android:textSize="12sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:weightSum="3"
+                >
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="price"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:layout_weight="3"
+                    />
+
+
+            </LinearLayout>
+
+            <fragment
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/place_autocomplete_fragment"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                />
+            <fragment
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/place_autocomplete_fragment2"
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+                />
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/subscribe"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/back2"
+                android:text="Subscribe"
+                android:textColor="#fff"
+                android:textSize="11sp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

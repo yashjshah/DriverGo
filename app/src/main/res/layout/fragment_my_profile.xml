@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jayon.drivergo.controllers.MyProfileActivityFragment"
+    tools:showIn="@layout/activity_my_profile">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:elevation="10dp"
+           >
+
+            <com.flaviofaria.kenburnsview.KenBurnsView
+                android:id="@+id/KenBurnsView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/background"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/back"
+                android:gravity="center"
+                android:orientation="vertical">
+
+             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profileImage"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/logo3"
+                    app:civ_border_color="#FFf"
+                    app:civ_border_width="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:text="name"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:text="email"
+                    android:textSize="12sp"
+                  />
+
+                <TextView
+                    android:id="@+id/sammary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:gravity="center"
+                    android:text="sammary"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+                <ImageView
+                    android:id="@+id/location"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/baseline_location_on_white_48dp"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/colorPrimary"
+            style="@style/AppTheme"
+            app:tabTextColor="#fff"
+            app:tabIndicatorColor="#d2d2d2"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:tabSelectedTextColor="#d2d2d2"
+            app:tabTextAppearance="@style/TabLayoutStyle"
+
+            />
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewPager"
+            android:layout_below="@+id/tab_layout">
+
+        </android.support.v4.view.ViewPager>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background3"
+    tools:context="com.example.jayon.drivergo.controllers.Signup1ActivityFragment"
+    tools:showIn="@layout/activity_signup1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:background="@drawable/back">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profileImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo3"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#fff"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Create new account"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView3"
+            />
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:gravity="center"
+         android:layout_gravity="center"
+         android:layout_marginTop="10dp"
+         >
+
+         <EditText
+             android:layout_width="130dp"
+             android:layout_height="35dp"
+             android:hint="First Name"
+             android:textColor="#fff"
+             android:inputType="text"
+             android:background="@drawable/edittext"
+             android:id="@+id/firstName"
+             android:textColorHint="#fff"
+             android:layout_gravity="center"
+             android:paddingLeft="20dp"
+             android:textSize="13dp"
+             />
+
+
+         <EditText
+             android:layout_width="130dp"
+             android:layout_height="35dp"
+             android:hint="Last Name"
+             android:textColor="#fff"
+             android:inputType="text"
+             android:background="@drawable/edittext"
+             android:id="@+id/lastName"
+             android:textColorHint="#fff"
+             android:layout_gravity="center"
+             android:paddingLeft="20dp"
+             android:textSize="13dp"
+
+             />
+     </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Email"
+            android:textColor="#fff"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:layout_marginRight="50dp"
+            android:id="@+id/email"
+            android:textColorHint="#fff"
+            android:textSize="13dp"
+            android:paddingLeft="20dp"
+            />
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Password"
+            android:textColor="#fff"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:layout_marginRight="50dp"
+            android:inputType="textPassword"
+            android:id="@+id/passwordet"
+            android:textColorHint="#fff"
+            android:textSize="13dp"
+
+            android:paddingLeft="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Phone"
+            android:textColor="#fff"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:layout_marginRight="50dp"
+            android:inputType="phone"
+            android:id="@+id/phone"
+            android:textSize="13dp"
+            android:textColorHint="#fff"
+            android:paddingLeft="20dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:hint="Birth Date"
+            android:textColor="#fff"
+            android:inputType="date"
+            android:textSize="13dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:layout_marginRight="50dp"
+            android:id="@+id/date"
+            android:textColorHint="#fff"
+            android:paddingLeft="20dp"/>
+
+        <fragment
+
+            android:layout_marginTop="15dp"
+            android:id="@+id/place_autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_height="35dp"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/roleSpinner"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext"
+            android:spinnerMode="dialog"
+            android:textColorHint="@color/colorAccent"
+            android:paddingLeft="20dp"
+            android:textSize="13dp"
+            android:prompt="@string/role"
+            android:entries="@array/role_arrays"
+            >
+
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/registbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn1"
+            android:text="Sign up"
+            android:textSize="13dp"
+            android:textColor="#848484" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
